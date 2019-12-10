@@ -39,7 +39,7 @@ public class SpringBootJobTwo {
 		String customvalue = System.getenv().get("customvalue");
 		System.out.println("Message" + customvalue);
 
-		String secretvalue = System.getenv().get("testsecret");
+		String secretvalue = System.getenv().get("username");
 		System.out.println("secretvalue" + secretvalue);
 
 
