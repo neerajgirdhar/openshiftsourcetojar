@@ -35,7 +35,10 @@ public class SpringBootJobTwo {
 		log.info("springProfile Set-->" + springProfile);
 		String springProfile1 = System.getenv().get("spring.profiles.active");
 		log.info("springProfile1 Set(SYATEN)-->" + springProfile1);
-		
+
+		String springProfile2 = System.getenv().get("springprofilesactive");
+		System.out.println("springprofilesactive Set(SYATEN)-->" + springProfile2);
+
 		SpringBootJobTwo springBootJob2 = (SpringBootJobTwo) conf
 				.getBean("springBootJobTwo");
 		springBootJob2.execute();

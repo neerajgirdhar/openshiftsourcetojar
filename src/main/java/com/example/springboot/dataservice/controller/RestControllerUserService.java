@@ -29,6 +29,9 @@ public class RestControllerUserService {
 	public String getDetails()
 			throws IOException, InterruptedException {
 
+
+		String springProfile2 = System.getenv().get("springprofilesactive");
+		System.out.println("springprofilesactive Set(SYATEN)-->" + springProfile2);
 		log.info("in getDetails---->");
 		return "Deploying Simple Spring Boot Microservice on Docker->>";
 	}
