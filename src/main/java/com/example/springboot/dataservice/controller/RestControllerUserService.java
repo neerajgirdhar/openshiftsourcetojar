@@ -29,7 +29,7 @@ public class RestControllerUserService {
 	public String getDetails()
 			throws IOException, InterruptedException {
 
-		Thread.sleep(120000);
+		Thread.sleep(30000);
 		String customvalue = System.getenv().get("customvalue");
 		return customvalue;
 	}
