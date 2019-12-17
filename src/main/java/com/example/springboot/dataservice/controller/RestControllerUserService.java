@@ -28,10 +28,10 @@ public class RestControllerUserService {
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String getDetails()
 			throws IOException, InterruptedException {
-log.info("Sleeping");
-		Thread.sleep(5000);
-		log.info("awake now....after a tiny nap");
+
 		String customvalue = System.getenv().get("customvalue");
+		for(int i=0;i<20;i++)
+		customvalue = customvalue +"<-->"+ customvalue;	
 		return customvalue;
 	}
 
