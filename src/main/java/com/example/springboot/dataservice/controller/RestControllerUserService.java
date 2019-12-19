@@ -32,7 +32,8 @@ log.info("Sleeping");
 		
 		log.info("awake now....after a tiny nap");
 		String customvalue = System.getenv().get("customvalue");
-		return customvalue;
+		String hostname = System.getenv().get("HOSTNAME");
+		return customvalue + hostname;
 	}
 
 }
